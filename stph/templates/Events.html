@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+body {
+  background-color: lightred;
+}
+footer {
+  text-align: center;
+  padding: 13px;
+  background-color: black;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="main">
+
+<h1>studio photographyy.com</h1>
+<hr>
+
+<h2>EVENTS PORTFOLIO</h2>
+
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="{% static 'wed.png' %}" alt="wedding picture" style="width:100%">
+      <h3>My Work</h3>
+      <p>The couple along with the wedding brigade have dressed gracefully and merged with the theme of the wedding so well.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="{% static 'dance.png' %}" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>When it comes to how you should choose this pivotal song,consider the type of genre you’re looking for.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="{% static 'ev1.png' %}" alt="Nature" style="width:100%">
+      <h3>My Work</h3>
+      <p>We live in a country India,we must admit.The way we look up at the super tall Gopurams and more often find ourselves emitting a “Wow!” will teach us</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="{% static 'guest.png' %}" alt="guest" style="width:100%">
+      <h3>My Work</h3>
+      <p>As a wedding guest preparing to attend a nuptial celebration.Let’s explore your fashionable options within this complete semi-formal wedding guide.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="content">
+  <img src="{% static 'ev3.png' %}" alt="north" style="width:100%">
+  <h3>Some Other Work</h3>
+  <p>It was Mystic’s long term wish to shoot and experience the bloom of love in the peculiarly beautiful city, Jodhpur,Rajastan. As a photographer we proposed this idea of having a wedding photography shoot in Jodhpur</p>
+  <p> No wonder, because they are one of our sportive couple to open for any creative ideas that we bring up…!</p>
+</div>
+
+</div>
+<footer>
+    <h1>Get in touch with best shoots</h1>
+    <h2>call us-9715773535 / 7448978343</h2>
+    <p> studiophotography<br>
+    <a href="studiophotography@gmail.com">studiophotography@gmail.com</a></p>
+    <h2>socials</h2>
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+</footer>
+</body>
+</html>
